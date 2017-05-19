@@ -1,3 +1,3 @@
-# lc_resp_sass_bourb_susy
+# Simple Responsive Design
 
 Simple responsive project with sass, bourbon and susy
