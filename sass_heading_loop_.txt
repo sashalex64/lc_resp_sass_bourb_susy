@@ -1,0 +1,28 @@
+SASS FUNCTION LOOP FOR HEADINGS H1, H2, H3, H4, H5, H6
+This SASS function provides an easy way to apply styles to all of the 6 standardised HTML headings (h1,h2,h3,h4,h5,h6).
+
+This is mainly to prove the power of Sass, and as a simple mixin, so that you can affectively chop and change stylings for your heading tags.
+
+// Setup the function in your functions or helpers files, wherever you keep these bits.
+@function headings($from:1, $to:6) {
+    @if $from == $to {
+        @return 'h#{$from}';
+    } @else {
+        @return 'h#{$from},' + headings($from+1, $to);
+    }
+}
+
+// Then call it with the rules/styles you want wherever you want (As long as the file/include has access to the above function of course).
+#{headings(1,6)} {
+  color: white;
+}
+Turns into:
+
+h1, h2, h3, h4, h5, h6 {
+  color: white;
+}
+At its default state it will output all h1 to h6 tags, but it’s useful if you use it twice, possibly to apply one set of typogrpahy to h1-h3 and another to h4-h6. You would do this by calling the function: #{headings(1,6)} with the number range you need. For example, if you wanted to apply styling to your h2, h3, and h4’s you would simply run:
+
+ #{headings(2,4)} {
+  color: white;
+}

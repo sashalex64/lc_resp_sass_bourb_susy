@@ -1,0 +1,21 @@
+.site-header {
+	background:$black;
+	text-align: center;
+}
+.site-branding {
+
+}
+.site-title {
+	color: $gray;
+}
+.header-nav {
+	// margin-left: 10px;
+
+	ul {
+		margin: 0;
+		padding: 0;
+	}
+	a {
+		color: $gray;
+	}
+}

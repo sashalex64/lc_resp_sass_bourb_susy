@@ -1,0 +1,37 @@
+ .hero {
+ 	text-align: center;
+ 	.overlay {
+ 		// padding: 1em 1em;
+ 		background: rgba($orange, .7);
+ 	}
+ 	.wrap {
+ 		padding: 60px 0;
+ 	}
+ }
+
+ .feature {
+ 	 	img {
+ 		border-radius: $default-border-radius;
+ 		@include size(100% auto);
+ 	}
+ }
+ .customer {
+ 		img {
+ 			border-radius: $default-border-radius;
+ 			@include size(150px);
+ 		}
+ }
+
+ .testimonials {
+ 	background:mix(black, $blue, 50);
+ 	color: $gray;
+ 	text-align: center;
+ 	.name {
+ 		display: block;
+ 	}
+ 	.quote {
+ 		font-style: italic;
+ 		font-family: $serif;
+ 		width: 100%;
+ 	}
+ }
