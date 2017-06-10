@@ -498,6 +498,7 @@ nav li {
 
 nav a {
   padding: 0 10px;
+  text-decoration: none;
 }
 
 nav a:hover {
@@ -568,7 +569,7 @@ nav a:hover {
 
 @media (min-width: 640px) {
   .header-nav {
-    width: 74.6988%;
+    width: 57.83133%;
     float: right;
     margin-right: 0;
     padding-top: 40px;
